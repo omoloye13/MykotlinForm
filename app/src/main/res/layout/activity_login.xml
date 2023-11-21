@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="15dp"
+    android:background="@drawable/union"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back!"
+        android:textSize="50sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text1"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_marginLeft="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Username and Password!"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:id="@+id/text2"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Username"
+        android:id="@+id/edit_text1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:textColor="#e2e2e2e2"
+        android:textSize="20sp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="160dp"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/edit_text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text1"
+        android:textSize="20sp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="60dp"
+
+        />
+
+    <Button
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="LOGIN"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/text3"
+        android:layout_marginTop="22dp"
+
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Create a New Account"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/text4"
+        android:layout_marginTop="5dp"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
