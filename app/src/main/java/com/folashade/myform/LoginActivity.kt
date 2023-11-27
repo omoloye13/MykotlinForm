@@ -11,6 +11,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        //Logic to navigate to createAccount
 
         var createNAButton: Button = findViewById(R.id.createNewAccount)
 
@@ -18,6 +19,7 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent (this, CreateNewAccountActivity::class.java)
             this.startActivity(intent)
         }
+        //Handling Form Validation and navigation
         val loginButton :Button = this.findViewById(R.id.loginButton)
         val userName : EditText = this.findViewById(R.id.edit_text1)
         val password : EditText = this.findViewById(R.id.edit_text2)
@@ -46,5 +48,11 @@ class LoginActivity : AppCompatActivity() {
 
             validateUserInput()
         }
+        //restricting the user from going back
+//        fun onBackPressed(){
+//            this.finishAffinity()
+//            super.onBackPressed()
+//        }
     }
 }
+
